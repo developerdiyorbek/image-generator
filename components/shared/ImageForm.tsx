@@ -56,7 +56,7 @@ function ImageForm() {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="md:max-w-[150px] w-full md:ml-auto md:block"
+              className="md:max-w-[150px] w-full md:ml-auto md:block text-center"
               aria-label="Submit login form"
             >
               {loading && <Loader2 className="animate-spin" />}
