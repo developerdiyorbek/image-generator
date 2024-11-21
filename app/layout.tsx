@@ -12,12 +12,15 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Image generator",
   description: "image generator app",
+  icons: { icon: "/icon.webp" },
 };
 
 export default function RootLayout({ children }: ChildProps) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased`}>{children}</body>
+      <body className={`${roboto.className} antialiased`}>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
